@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The Specidicity of this selector is 10 */
+        h1{
+            color: aqua;
+        }
+        /* The Specidicity of this selector is 10 */
+        h1.yellow{
+            color: yellow;
+        }
+        /* The Specidicity of this selector is 10 */
+        .purple{
+            color: purple;
+        }
+        /* The Specidicity of this selector is 10 */
+        .red{
+            color: red !important;
+        }
+        /* The Specidicity of this selector is 10 */
+        /* #green{
+            color: green;
+        } */
+        
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow red purple" id="green">CSS Specificity</h1>
+    </div>
+</body>
+</html>
