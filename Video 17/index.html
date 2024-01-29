@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Masterclass</title>
+    <style>
+        /* element selector */
+        div{
+            /* background-color: yellow; */
+        } 
+        /* Class Selector */
+        .yellow{
+            background-color: yellow;
+        }
+        /* ID selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div > p{
+            color: blue;
+            background-color: red;
+        }
+        /* Descendant Selector */
+        div p{
+            color: blue;
+            background-color: red;
+        }
+        /* Universal Selector */
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         
+         /* Pseudo Selector */
+a:visited{
+    color: red;
+}
+a:link{
+    color: green;
+}
+a:active{
+    background-color: yellow;
+}
+a:hover{
+    background-color: blue;
+}
+p:first-child{
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    <main class="one">
+       <p>I am First</p>
+       <p>I am Second</p>
+    </main>
+    <div class="yellow">
+        I am a Div.
+        <p>I am a Paragraph</p>
+    </div>
+    <div id="green">
+        I am Green
+    </div>
+    <a href="http://www.google.com">Go To Google</a>
+    <a href="http://www.google2.com">Go To Google</a>
+    <div>
+
+    </div>
+</body>
+</html>
