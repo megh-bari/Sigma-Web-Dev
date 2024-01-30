@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        /* body{
+            background-color: rgb(164, 255, 52);
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+            padding: 3px;
+            margin: 3px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: aqua;
+            position: relative;
+            z-index: 2;
+        }
+
+        .box2 {
+            background-color: blue;
+            position: relative;
+            top: -50px;
+            left: 50px;
+
+        }
+
+        .box3 {
+            background-color: red;
+            position: relative;
+            z-index: 2;
+        }
+
+        .box4 {
+            background-color: yellow;
+            position: relative;
+            top: -50px;
+            left: 50px;
+        }
+
+        .box5 {
+            background-color: aqua;
+            position: relative;
+            left: 1000px;
+            top: -450px;
+            z-index: 2;
+        }
+
+        .box6 {
+            background-color: blue;
+            position: relative;
+            left: 1050px;
+            top: -500px;
+        }
+
+        .box7 {
+            background-color: red;
+            position: relative;
+            left: 1000px;
+            top: -450px;
+            z-index: 2;
+        }
+
+        .box8 {
+            background-color: yellow;
+            position: relative;
+            left: 1050px;
+            top: -500px;
+        }
+
+        .parent {
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+
+        
+        <div class="box box1">Hey</div>
+        <div class="box box2">Hey</div>
+        <div class="box box3">Hey</div>
+        <div class="box box4">Hey</div>
+        <div class="box box5">Hey</div>
+        <div class="box box6">Hey</div>
+        <div class="box box7">Hey</div>
+        <div class="box box8">Hey</div>
+        
+    </div>
+
+
+    </div>
+</body>
+
+</html>
