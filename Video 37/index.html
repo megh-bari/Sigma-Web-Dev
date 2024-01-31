@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        /* @media only screen and (max-width: 455px)  {
+            body{
+                .navbar{
+                    columns: 2;
+                }
+            }
+        } */
+
+        /* CSS on Body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* CSS on Navigation Bar */
+        .navbar {
+            background-color: rgb(0, 47, 255);
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar li {
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        li:hover {
+            color: yellow;
+        }
+
+        /* CSS on Card */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-top: 50px;
+        }
+
+        .content {
+            display: flex;
+
+        }
+
+        .card1 {
+            border: 1px solid black;
+            width: 500px;
+            height: 650px;
+            margin: 0 60px;
+            /* Adjust the left and right margins */
+            position: relative;
+            border-radius: 18px;
+            background-color: white;
+            box-shadow: #757575;
+        }
+
+        .img {
+            padding: 5px;
+            border-radius: 18px;
+        }
+
+        .card-content {
+            margin: 0px;
+            padding: 18px;
+        }
+
+        .card-content h1 {
+            margin-top: 12px;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #555;
+        }
+
+        span {
+            background-color: white;
+            color: black;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 14px;
+            padding: 5px;
+            margin-top: 4px;
+            text-align: center;
+            width: 50px;
+        }
+
+        .readmore {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-top: 12px;
+            text-decoration: none;
+            color: #fff;
+            /* border: 2px solid #000000;  */
+            background-color: #3498db;
+            border-radius: 4px;
+        }
+
+        /* Card 2 */
+        .card2 {
+            border: 1px solid black;
+            width: 500px;
+            height: 650px;
+            margin: 0 60px;
+            position: relative;
+            border-radius: 18px;
+            background-color: white;
+            box-shadow: #757575;
+        }
+
+        /* CSS on Intro */
+
+        .intro {
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px;
+            height: 80px;
+            margin: 50px 475px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 18px;
+            color: #333;
+        }
+
+        .intro h1:hover {
+            color: red;
+        }
+
+        /* CSS on Logo */
+        .logo img {
+            width: 150px;
+            height: 140px;
+            border-radius: 50%;
+            justify-content: end;
+            position: fixed;
+            z-index: 1;
+            right: 1px;
+            bottom: 20px;
+        }
+
+        /* CSS on Footer */
+        .footer {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            height: 30px;
+            bottom: 0%;
+            color: black;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="card1">
+                    <img class="img" src="boat 2.png" width="490px">
+                    <div class="card-content">
+                        <span>Nature</span>
+                        <span>Beach</span>
+                        <h1>Boating</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi delectus hic vero
+                            exercitationem consectetur? Facilis est, ex officiis fugiat iste, reprehenderit reiciendis
+                            aliquam labore cum quod, soluta quo tempore! Dolor?</p>
+                        <div class="readmore">Read More</div>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img class="img" src="boat 2.png" width="490px">
+                    <div class="card-content">
+                        <span>Nature</span>
+                        <span>Beach</span>
+                        <h1>Boating</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam impedit esse natus totam,
+                            quam facilis pariatur ipsa quia dolorum rerum qui nemo alias odit molestias? Vero sit
+                            explicabo corporis sunt.</p>
+                        <div class="readmore">Read More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="intro">
+            <h1>Welcome to Sigma Web Development Express!</h1>
+        </div>
+    </section>
+
+    <div class="logo">
+        <img src="https://i.pinimg.com/564x/0d/c1/55/0dc15569002a714e09ef3b03da9ac43d.jpg" alt="">
+    </div>
+
+    <footer>
+        <div class="footer">&copy;Copyright-2024</div>
+    </footer>
+
+</body>
+
+</html>
