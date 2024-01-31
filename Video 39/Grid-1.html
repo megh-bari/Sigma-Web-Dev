@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+.container{
+    border: 2px solid black;
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr 5fr 2fr;
+    justify-items: center;
+    /* gap: 34px;
+    row-gap: 10px;
+    column-gap: 20px  ; */
+    /* grid-template-rows: 100px 100p 100px ; */
+}
+
+.item{
+    border: 2px solid red;
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* .item-4{
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+/* } */
+/* .item-1{ */
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+/* } */ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1f">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
