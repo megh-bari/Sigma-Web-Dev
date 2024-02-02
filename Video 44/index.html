@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        @media screen and (max-width: 1145px) {
+    .grid{ 
+        grid-template-columns: 1fr; 
+    }
+}
+        .logo img {
+            width: 185px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right ul li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+
+        }
+
+        .translate img {
+            width: 20px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .first div {
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            margin: 0px 20px;
+        }
+
+        .first span {
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            font-family: sans-serif;
+            margin-top: 80px;
+            font-size: 48px;
+            gap: 10px;
+            color: #3d3d3d;
+        }
+
+        .first span b {
+            color: black;
+        }
+
+        .first p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            color: black;
+            white-space: pre-line;
+            text-align: center;
+            margin-block-end: 15px;
+            margin-top: -13px
+        }
+
+        .first button {
+            width: auto;
+            height: 50px;
+            margin-top: 30px;
+            background-color: #00b6d1;
+            text-decoration: none;
+            border: none;
+            padding: 14px 16px !important;
+            color: #ffffff;
+            border-radius: 8px;
+            font-weight: bolder;
+        }
+
+        flex {
+    display: flex;
+ 
+}
+
+.small {
+    font-size: 12px;
+}
+
+.second { 
+    max-width: 50vw;
+    margin: auto; 
+    margin-top:50px ;
+}
+.download{
+    display: flex;
+    font-family: sans-serif;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Resources</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>Pricing</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li><span>About Us</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                    <li> <img src="Google_Translate_Icon.png" width="20px" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <span>Download <b>UltraEdit</b> for Windows <div class="img"><img
+                        src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></div> </span>
+
+            <p>
+                Download and try UltraEdit before you buy it! This download includes the full Windows
+                version of the text editor.</p>
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </section>
+        <section class="second">
+            <div class="download">
+                <img width="80px" src="UE_logo_icon_black-new.png" alt="">
+                <span>Download UltraEdit </span>
+                <span class="small">v2023.1(released 08/16/2023) | Hotfix</span>
+            </div>
+    </main>
+</body>
+
+</html>
